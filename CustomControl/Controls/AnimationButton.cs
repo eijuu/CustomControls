@@ -133,8 +133,7 @@ namespace CustomControl.Controls
                 }
 
                 double timeMs = 1000.0 / rippleAnimationFPS;              
-                int sleepTimeMs = Convert.ToInt32(timeMs);
-                Thread.Sleep(sleepTimeMs);
+                Thread.Sleep(Convert.ToInt32(timeMs));
                 Invalidate();            
             }
            
